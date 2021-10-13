@@ -1,0 +1,77 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Midterm Exam Web-Dev Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+
+        <div class="background">   
+            <div class="nav-bar">          
+                <div class="nav-links " id="nav-links">
+                    <i class="fa fa-close" onclick="closeMenu()"></i>                      
+                    <ul>
+                        <li class="active"><a href="#Home">Home</a></li>
+                        <li><a href="#Activities">Activities</a></li>
+                        <li><a href="#Gallery">Gallery</a></li>
+                        <li><a href="#Reservation">Reservation</a></li>                       
+                    </ul>                   
+                    <button type="button" class="btn" style="margin-top: 0; margin-right: -70px; margin-bottom: 20px;" onclick="ReadMore()">SIGN UP</button>                   
+                </div> 
+                    <i class="fa fa-bars" onclick="showMenu()"></i>              
+                </div>
+
+           <div class="banner-title">
+                <h1>Take a <span> Break and <br> Say </span> Hello to <span>Summer..</span> </h1>
+                <button type="button" class="btn">Read More</button>
+            </div>
+            <div class="vertical-bar">
+                    <div class="upper-icon">
+                        <i class="fa fa-list"></i>
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div class="lower-icon">    
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                    <div class="ad">
+                        <div class="contents"></div>
+                        <div class="ad-img">
+                            <img src="grass.jpg" alt="grass">
+                        </div>
+                    </div>
+            </div>
+                <div class="box">
+                    <h2>About</h2>  
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+
+            
+                <div class="logo">
+                    <h1>me</h1>
+                    <p><Span> Private Island Resort</Span> |<span> Relax </span>|<span> Enjoy</span></p>
+                </div>
+            
+
+            </div>    
+
+        </div>
+
+
+        <script>
+            var show = document.getElementById("nav-links");
+            function showMenu(){
+                show.style.right="0";
+            }
+            function closeMenu(){
+                show.style.right="-200px";
+            }
+            
+
+        </script>
+    </body>
+    </html>
+        

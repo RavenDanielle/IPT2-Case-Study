@@ -1,0 +1,386 @@
+*
+{
+margin: 0;
+padding: 0;
+font-family: Century Gothic;
+}
+@font-face{
+    src: url(../MikeJenWEBSITE/fonts/Good\ Brush.ttf);
+    font-family: brushTTF;
+}
+
+.background{
+     height: 100vh;
+     background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../MIDTERMS/mybackground.jpg);
+     background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: #666;
+    
+}
+
+
+
+.nav-links{
+    flex: 1;
+}
+
+.nav-links ul{
+margin-left: 100px;
+float: left;
+  
+}
+
+.nav-links ul li{ 
+    display: inline-block;
+}
+
+.nav-links ul li a{
+text-decoration: none;
+color: #fff;
+padding:5px 20px;
+border: 1px transparent;
+border-radius: 5px;
+}
+
+.nav-links ul li a:hover{
+background-color: #fff;
+color: black;
+}
+
+.nav-links ul li.active a{
+background-color: #fff;
+color: black;
+}
+.nav-bar{   
+    padding: 40px 130px;
+}
+
+.btn{
+    padding: 10px 20px;
+    background: yellow;
+    cursor: pointer;
+    font-weight: bold;
+    font-family:sans-serif;
+    border: 0;
+    border-radius: 5px;
+}
+.nav-links .btn{
+    float: right;
+}
+.banner-title{
+    margin: 80px 130px ;
+    color: white;
+
+}
+.banner-title h1{
+    font-size: 54px;
+    margin-top: 50px ;
+    margin-bottom: 30px;
+}
+.banner-title h1 span{
+    color:yellow;
+}
+.vertical-bar{
+    height: 100%;
+    background: black;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.upper-icon{
+    height: 60%;
+    width: 40px;
+}
+
+.upper-icon .fa{
+    margin: 25px 3px;
+    display: block;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.lower-icon{
+    height: 35%;
+    width: 40px;
+    background: rgb(165, 236, 245);
+    text-align: center;
+    padding-top: 27%;
+    bottom: 0;
+    position: absolute;
+}
+.lower-icon .fa{
+    margin: 25px 3px;
+    display: block;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ad{
+     display: flex;
+     width: 400px;
+     right: 0;
+     bottom: 0;
+     position: absolute;
+     background: yellow;
+     align-items: center;
+}
+.contents{
+    flex-basis: 50%;
+    padding: 10px;
+
+}
+.ad-img{
+    flex-basis: 50%;
+}
+.ad-img img{
+    width: 100%;
+
+}
+.nav-bar .fa{
+    display: none;
+}
+
+.box{
+    height: 100px ;
+    width: 100%;
+    background: rgb(241, 239, 204);
+    position: absolute;
+    bottom: 0;
+    margin-left: 40px;
+}
+.box h2{
+    text-align: center;
+    padding-top: 10px;
+    color: brown;
+}
+.box p{
+    padding: 10px 50px;
+    padding-top: 0;
+    font-family: arial;
+    text-indent: 50px;
+}    
+
+.logo{
+   
+    height: 325px ;
+    width: 325px;
+    position: absolute;
+    right: 140px;
+    top: 18%;
+    border: #000000;
+    opacity: 75%;
+    text-align: center;
+    
+}
+
+.logo h1{
+    font-size: 325px;
+    color: maroon;
+    font-family: brushTTF;
+    border: 10px solid black;  
+}
+.logo p{
+    color: #fff;
+    text-align: center;
+    margin-top: 0px;
+}
+.logo p span{
+    color: gold;
+    font-size: 14px;
+}
+
+                                /* max width 650 */
+@media screen and (max-width: 700px){
+
+    .vertical-bar{
+        display: none;
+    }
+    .banner-title{
+        margin: 80px;
+    }
+    .banner-title h1{
+        font-size: 25px;
+    }
+    .banner-title .btn{      
+        padding: 5px 10px;
+        background: yellow;
+        cursor: pointer;
+        font-weight: bold;
+        font-family:sans-serif;
+        border: 0;
+        border-radius: 5px;
+    }
+    .ad{
+        width: 100%;
+ 
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }  
+    .fa-bars{
+        position: absolute;
+        right:20px ;
+        top:10px ;
+
+    }
+    .nav-bar .fa{
+        display: block;
+        color: #fff;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links{
+        display:  ;
+        height: 100vh;
+        width: 200px;
+        background: #000000;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        text-align: center;
+        z-index: 2 ;
+        float: none;
+        
+    }
+    .nav-links ul li a{
+        display: block;
+    }
+    .nav-links .btn{
+        float: none;
+        margin-left: 25px;
+        margin-top: 10;       
+    }
+    .box{
+        height: 30%;
+        width: 100%;       
+        margin-left: 0px;
+        bottom: 0px;
+    }
+    .box h2{
+        font-size: 18px;
+    }
+    .box p{
+        font-size: 10px;
+        text-align: center;
+        padding: 10px;
+    }
+    .logo{
+        height: 20px;
+        width: 20;
+        right: -10%;
+        top: 58%;
+    }
+    .logo h1{
+        font-size: 25px;
+        width: 20%;
+        height: 120%;
+        border: 5px solid black;
+        border-radius: 8px; 
+        padding: 2px;
+        text-align: center;
+        margin: 2px;
+    }
+    .logo p{
+        text-align: left;
+        margin-left: 0px;
+    }
+    .logo p span{
+        font-size: 9px;
+        
+    }
+}
+                                                /*  max width 1024 px   */
+@media screen and (min-width: 700px) and (max-width:850px){
+
+    .logo{
+        height: 30px;
+        width: 100%;
+        right: -8%;
+        top: 50%;
+    }
+    .logo h1{
+        font-size: 100px;
+        width: 90%;
+        border: 14px solid rgb(0, 0, 0);
+        border-radius: 8px; 
+        padding: 2px;
+        text-align: center;
+        margin: 2px;
+    }
+    .logo p{
+        text-align: center;
+        margin-left: -50%s;
+        font-size: 40px;
+    }
+    .logo p span{
+        font-size: 20px;
+        
+    }
+    .box{
+        height: 18%;
+        width: 94%;       
+        margin-left: 50px;
+        bottom: 5px;
+    }
+    .box h2{
+        font-size: 30px;
+    }
+    .box p{
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+
+                                            /*  max width 1024 px   */
+@media screen and (min-width: 850px) and (max-width: 1024px){
+    .logo{
+        height: 50px;
+        width: 100%;
+        right: -8%;
+        top: 50%;
+    }
+    .logo h1{
+        font-size: 100px;
+        width: 90%;
+        border: 14px solid rgb(0, 0, 0);
+        border-radius: 8px; 
+        padding: 2px;
+        text-align: center;
+        margin: 2px;
+    }
+    .logo p{
+        text-align: center;
+        margin-left: -50%s;
+        font-size: 40px;
+    }
+    .logo p span{
+        font-size: 26px;
+        
+    }
+    .box{
+        height: 18%;
+        width: 94%;       
+        margin-left: 50px;
+        bottom: 5px;
+    }
+    .box h2{
+        font-size: 40px;
+    }
+    .box p{
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+                                            
